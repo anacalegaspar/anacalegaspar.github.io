@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ana Calé Gaspar</title>
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./assets/img/header.png">
+        <div class="menu" onclick="openMenu()"><img src="./assets/img/menu.png"></div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-sm-3">
+                    <h1 class="title">astrid</h1>
+                </div>
+
+                <div class="col-sm-9"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <img class="work-image" src="./assets/img/fotoastrid3.png">
+                    <div class="overlay">
+                        <a class="overlay-text">
+                            ASTRID
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12n">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 astric-section">
+                                <img id="astric-picture" src="./assets/img/astrid01.png" class="astric-picture">
+
+                                <div class="astric-description" style="text-align: justify;">
+                                    A ASTRID surgiu de um desafio de transformar um móvel de madeira num móvel de chapa metálica, tornando-se mais acessível e mais fácil de fabricar à partida. As suas formas completamente diferentes do que estamos habituados a ver numa mesinha de cabeceira
+                                    surgem da ultrapassagem de alguns constragimentos referentes à nova tecnologia. Assim, para que usássemos o mínimo de placas de chapa metálica possível, assim como parafusos/ferragens para fazer a gaveta deslizar (por
+                                    exemplo), usámos recortes na chapa de modo a que, com quinagens, conseguíssemos fazer a perna de trás e, na mesma chapa, as pernas da frente (com os respetivos apoios) e a estrutura que vai suportar a gaveta. De outra
+                                    chapa metálica, fizemos a gaveta.
+                                </div>
+
+                            </div>
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-1" onmouseover="changeAstrid(0)">
+                                <div class="astric-filter white"></div>
+                            </div>
+                            <div class="col-sm-1" onmouseover="changeAstrid(1)">
+                                <div class="astric-filter black"></div>
+                            </div>
+                            <div class="col-sm-1" onmouseover="changeAstrid(2)">
+                                <div class="astric-filter yellow"></div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 astric-section">
+                    <img src="./assets/img/astrid04.png" class="astric-picture">
+
+                    <div class="astric-description" style="text-align: justify;">
+                        O posicionamento da gaveta e da "prateleira", estão definidos de modo a que seja mais fácil chegar à gaveta quando estamos de pé, e não só para quando estamos deitaos. Ainda aumentámos a profundidade da prateleira de baixo de modo a ser mais fácil guardar/aceder
+                        por exemplo um livro, quando deitados na cama. <br>
+                        <div style="margin-top: 20px;">Decidimos adotar uma paleta de cores que permitisse inserir esta mesa de cabeceira em ambientes que obedecem ao estilo nórdico/escandinavo: Amarelo, Preto e Branco; E dar a liberdade ao cliente de escolher a cor da estrutura e
+                            da gaveta no caso de querer combiná-las.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="menu-container" class="menu-container">
+        <a href="./index.html">home</a>
+        <a href="./about.html">about me</a>
+        <a class="active" href="./work.html">work</a>
+        <a href="./contact.html">contact me</a>
+
+        <div class="close-menu" onclick="closeMenu()"><img src="./assets/img/mais.png"></div>
+    </div>
+
+    <div id="opacity-container" class="opacity-container" onclick="closeMenu()"></div>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row text-center ">
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>navigate</h5>
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="# "></a>
+                        </li>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">about me</a></li>
+                        <li><a href="./work.html">my experience</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>work</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="./graphic.html">graphic design</a></li>
+                        <li><a href="./product.html">product design</a></li>
+                        <li><a href="./work.html">all</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>contact me</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="mailto:ana@caledesign.pt">my email</a></li>
+                        <li><a href="#">my studio</a></li>
+                        <li><a href="https://www.instagram.com/anacalegaspar/">my instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <small>all rights reserved <br>&copy; ANACALÉGASPAR 2020</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js " crossorigin="anonymous "></script>
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>

@@ -1,2 +1,2 @@
 # anacalegaspar.github.io
-My Personal Portfolio
+My personal portfolio

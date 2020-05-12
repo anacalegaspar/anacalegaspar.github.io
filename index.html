@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ana Calé Gaspar</title>
+
+    <!-- the below three lines are a fix to get HTML5 semantic elements working in old versions of Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./assets/img/header.png">
+        <div class="menu" onclick="openMenu()"><img src="./assets/img/menu.png"></div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2 text-right">
+                    <a href="#" id="all-work" class="active" onclick="changeView('ALL_WORK')">ALL WORK</a>
+                </div>
+                <div class="col-sm-2">
+                    <a href="#" id="graphic" onclick="changeView('GRAPHIC')">GRAPHIC</a>
+                </div>
+                <div class="col-sm-2 text-left">
+                    <a href="#" id="product" onclick="changeView('PRODUCT')">PRODUCT</a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <div class="col-sm-1 d-flex justify-content-end align-items-center">
+                    <img class="project-arrow inverted" src="./assets/img/certo.png" onclick="changeLeft()">
+                </div>
+                <div class="col-sm-3 d-flex justify-content-end align-items-center">
+                    <a id="left-link" onclick="changeRight()" style="cursor: pointer;">
+                        <img id="left-project" class="project-image" src="./assets/img/project01.png" alt="coverMe project">
+                    </a>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center">
+                    <a id="center-link">
+                        <img id="center-project" class="project-image active" src="./assets/img/project02.png" alt="uPack project">
+                    </a>
+                </div>
+                <div class="col-sm-3 d-flex justify-content-start align-items-center">
+                    <a id="right-link" onclick="changeLeft()" style="cursor: pointer;">
+                        <img id="right-project" class="project-image" src="./assets/img/project03.png" alt="uPack card">
+                    </a>
+                </div>
+                <div class="col-sm-1 d-flex justify-content-start align-items-center">
+                    <img class="project-arrow " src="./assets/img/certo.png" onclick="changeRight()">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-sm-12 text-center">
+                    <p><span id="project-title">U.PACK</span> <br><small id="project-description">packaging sustentável</small></p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2 about-title">
+                    ABOUT ME
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 about-section">
+                    <img class="about-picture" src="./assets/img/about-pic.png" alt="uPack project" onclick="openProject('./about')">
+                    <div class="about-description">
+                        Sou a Ana e sou estudante de Design na Universidade de Aveiro.<br> Sou uma curiosa sem cura, que adora explorar e cometer erros numa procura<br> constante de novos conhecimentos e ideias que não me deixem dormir.<br><a href="./about.html">+perfil</a><br>
+                        <a href="./work.html">+skills</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row " style="margin-top: 50px; ">
+                <div class="col-xs-1 col-sm-1"></div>
+                <div class="col-xs-3 col-sm-3 about-title ">
+                    MY EXPERIENCE
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-xs-1 col-sm-1 "></div>
+                <div class="col-xs-10 col-sm-10 about-section">
+                    <img class="about-picture " src="./assets/img/experience-pic.png " alt="uPack project" onclick="openProject('./work.html')">
+                    <div class="about-description">
+                        A minha formação começou com o curso de Artes Visuais na Escola José<br> Estêvão, em Aveiro, onde percebi o que queria estudar quando fosse para o<br> ensino superior: Design.
+                        <br>
+                        <a href="./work.html">+background</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <div id="menu-container" class="menu-container">
+        <a class="active">home</a>
+        <a href="./about.html">about me</a>
+        <a href="./work.html">work</a>
+        <a href="./contact.html">contact me</a>
+
+        <div class="close-menu" onclick="closeMenu()"><img src="./assets/img/mais.png"></div>
+    </div>
+
+    <div id="opacity-container" class="opacity-container" onclick="closeMenu()"></div>
+
+    <footer>
+        <div class="container-fluid ">
+            <div class="row text-center ">
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>navigate</h5>
+                    <ul class="list-unstyled ">
+                        <li>
+                            <a href="# "></a>
+                        </li>
+                        <li><a href="./index.html">home</a></li>
+                        <li><a href="./about.html">about me</a></li>
+                        <li><a href="./work.html">my experience</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>work</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="./graphic.html">graphic design</a></li>
+                        <li><a href="./product.html">product design</a></li>
+                        <li><a href="./work.html">all</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 ">
+                    <!--Column1-->
+                    <h5>contact me</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="mailto:ana@caledesign.pt">my email</a></li>
+                        <li><a href="#">my studio</a></li>
+                        <li><a href="https://www.instagram.com/anacalegaspar/">my instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="credits">
+            <small>all rights reserved <br>&copy; ANACALÉGASPAR 2020</small>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js " crossorigin="anonymous "></script>
+    <script src="./assets/js/script.js "></script>
+</body>
+
+</html>

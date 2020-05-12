@@ -1,0 +1,385 @@
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.header>img {
+    width: 100%;
+}
+
+.menu {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menu>img {
+    height: 40px;
+    width: auto;
+}
+
+.menu:hover {
+    color: white;
+}
+
+main a {
+    color: #797474;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+main a.active {
+    color: black;
+}
+
+main a:hover {
+    color: #e2bad3;
+    text-decoration: none;
+}
+
+.project-image {
+    height: 200px;
+    width: 200px;
+    opacity: 50%;
+}
+
+.project-image:hover {
+    opacity: 100%;
+}
+
+.project-image.active {
+    height: 300px;
+    width: 300px;
+    opacity: 100%;
+}
+
+.project-image.active:hover {
+    opacity: 50%;
+}
+
+.project-arrow {
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+}
+
+.project-arrow.inverted {
+    transform: scaleX(-1);
+}
+
+.project-arrow:hover {
+    color: #e2bad3;
+}
+
+.about-title {
+    color: #e2bad3;
+    font-size: 22px;
+    margin-left: -15px;
+}
+
+.about-picture {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -15px;
+}
+
+.about-picture:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.about-section {
+    background-color: #eeeeee;
+    height: 200px;
+    display: table;
+    overflow: hidden;
+}
+
+.about-description {
+    font-size: 18;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.about-description a {
+    color: #e2bad3;
+    font-weight: 500;
+}
+
+.about-description a:hover {
+    color: black;
+}
+
+.opacity-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 60%;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu-container {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.menu-container a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    color: black;
+    transition: 0.3;
+}
+
+.menu-container a:hover {
+    color: #797474;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-container a.active {
+    color: #e2bad3;
+    text-decoration: underline;
+}
+
+.show-menu {
+    -webkit-animation: slide-in 0.5s forwards;
+    animation: slide-in 0.5s forwards;
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        right: 0;
+    }
+}
+
+.hide-menu {
+    -webkit-animation: slide-out 0.5s backwards;
+    animation: slide-out 0.5s backwards;
+}
+
+@-webkit-keyframes slide-out {
+    100% {
+        right: -400px;
+    }
+}
+
+@keyframes slide-out {
+    100% {
+        right: -400px;
+    }
+}
+
+.close-menu {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.close-menu>img {
+    height: 40px;
+    width: auto;
+    transform: rotate(45deg);
+}
+
+.close-menu:hover {
+    color: #e2bad3;
+}
+
+.about-me-banner {
+    height: 1000px;
+    width: auto;
+}
+
+.title {
+    font-size: 64px;
+    color: #e2bad3;
+}
+
+.subtitle {
+    font-size: 32px;
+    color: #797474;
+}
+
+.about-icon {
+    height: 70px;
+    width: auto;
+}
+
+.work-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: white;
+    cursor: pointer;
+}
+
+.overlay:hover {
+    opacity: 50%;
+}
+
+.overlay-text {
+    color: black;
+    font-size: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 50px;
+    width: 100%;
+    background: #eeeeee;
+    padding: 50px 0 30px 0;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.astric-picture {
+    height: 400px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -15px;
+}
+
+.astric-section {
+    height: 200px;
+    display: table;
+    overflow: hidden;
+}
+
+.astric-description {
+    font-size: 18;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.astric-filter {
+    height: 20px;
+    width: 20px;
+    margin-top: -70px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.astric-filter.white {
+    border: solid 0.5px #797474
+}
+
+.astric-filter.black {
+    background-color: black;
+}
+
+.astric-filter.yellow {
+    background-color: #d6b829;
+    ;
+}
+
+form {
+    margin-top: 30px;
+}
+
+.contact-input {
+    background-color: #eeeeee;
+    color: white;
+}
+
+.contact-label {
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.contact-button {
+    margin-top: 10px;
+    background-color: #e2bad3;
+    color: white;
+}
+
+.contact-button:hover {
+    background-color: #eeeeee;
+    color: #e2bad3;
+}
+
+.contact-detail {
+    border-left: 3px solid #e2bad3;
+    padding-left: 5px;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+.contact-detail>a {
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+footer a {
+    color: #797474;
+    font-size: 14px;
+    transition-duration: 0.2s;
+}
+
+footer a:hover {
+    color: #e2bad3;
+    text-decoration: none;
+}
+
+.credits {
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: -10px;
+}
