@@ -16,7 +16,7 @@ body {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 8px;
     right: 16px;
     font-size: 28px;
