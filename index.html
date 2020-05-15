@@ -21,63 +21,63 @@
 <body>
 
     <div class="header">
-        <img src="./assets/img/header.png">
+        <img src="./assets/img/header.png" onclick="openProject('./index.html')" style="cursor: pointer;">
         <div class="menu" onclick="openMenu()"><img src="./assets/img/menu.png"></div>
     </div>
 
     <main>
         <div class="container">
             <div class="row text-center">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-2 text-right">
+                <div class="col-xs-12 col-sm-3"></div>
+                <div class="col-xs-12 col-sm-2 text-right">
                     <a href="#" id="all-work" class="active" onclick="changeView('ALL_WORK')">ALL WORK</a>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-xs-12 col-sm-2">
                     <a href="#" id="graphic" onclick="changeView('GRAPHIC')">GRAPHIC</a>
                 </div>
-                <div class="col-sm-2 text-left">
+                <div class="col-xs-12 col-sm-2 text-left">
                     <a href="#" id="product" onclick="changeView('PRODUCT')">PRODUCT</a>
                 </div>
-                <div class="col-sm-3"></div>
+                <div class="col-xs-12 col-sm-3"></div>
             </div>
             <div class="row" style="margin-top: 20px;">
-                <div class="col-sm-1 d-flex justify-content-end align-items-center">
+                <div class="col-xs-12 col-sm-1 d-flex justify-content-end align-items-center">
                     <img class="project-arrow inverted" src="./assets/img/certo.png" onclick="changeLeft()">
                 </div>
-                <div class="col-sm-3 d-flex justify-content-end align-items-center">
-                    <a id="left-link" onclick="changeRight()" style="cursor: pointer;">
+                <div class="col-xs-12 col-sm-3 d-flex justify-content-end align-items-center">
+                    <a id="left-link" href="./coverme.html" style="cursor: pointer;">
                         <img id="left-project" class="project-image" src="./assets/img/project01.png" alt="coverMe project">
                     </a>
                 </div>
-                <div class="col-sm-4 d-flex justify-content-center">
-                    <a id="center-link">
+                <div class="col-xs-12 col-sm-4 d-flex justify-content-center">
+                    <a id="center-link" href="./ufresh.html">
                         <img id="center-project" class="project-image active" src="./assets/img/project02.png" alt="uPack project">
                     </a>
                 </div>
-                <div class="col-sm-3 d-flex justify-content-start align-items-center">
-                    <a id="right-link" onclick="changeLeft()" style="cursor: pointer;">
+                <div class="col-xs-12 col-sm-3 d-flex justify-content-start align-items-center">
+                    <a id="right-link" href="./upack.html" style="cursor: pointer;">
                         <img id="right-project" class="project-image" src="./assets/img/project03.png" alt="uPack card">
                     </a>
                 </div>
-                <div class="col-sm-1 d-flex justify-content-start align-items-center">
+                <div class="col-xs-12 col-sm-1 d-flex justify-content-start align-items-center">
                     <img class="project-arrow " src="./assets/img/certo.png" onclick="changeRight()">
                 </div>
             </div>
             <div class="row" style="margin-top: 10px;">
-                <div class="col-sm-12 text-center">
+                <div class="col-xs-12 col-sm-12 text-center">
                     <p><span id="project-title">U.PACK</span> <br><small id="project-description">packaging sustentável</small></p>
                 </div>
             </div>
             <div class="row" style="margin-top: 50px;">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-2 about-title">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-12 col-sm-2 about-title">
                     ABOUT ME
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-1"></div>
-                <div class="col-sm-10 about-section">
-                    <img class="about-picture" src="./assets/img/about-pic.png" alt="uPack project" onclick="openProject('./about')">
+                <div class="col-xs-12 col-sm-1"></div>
+                <div class="col-xs-12 col-sm-10 about-section">
+                    <img class="about-picture" src="./assets/img/about-pic.png" alt="uPack project" onclick="openProject('./about.html')">
                     <div class="about-description">
                         Sou a Ana e sou estudante de Design na Universidade de Aveiro.<br> Sou uma curiosa sem cura, que adora explorar e cometer erros numa procura<br> constante de novos conhecimentos e ideias que não me deixem dormir.<br><a href="./about.html">+perfil</a><br>
                         <a href="./work.html">+skills</a>
@@ -85,19 +85,19 @@
                 </div>
             </div>
             <div class="row " style="margin-top: 50px; ">
-                <div class="col-xs-1 col-sm-1"></div>
-                <div class="col-xs-3 col-sm-3 about-title ">
+                <div class="col-xs-12 col-sm-1 col-xs-12 col-sm-1"></div>
+                <div class="col-xs-12 col-sm-3 col-xs-12 col-sm-3 about-title ">
                     MY EXPERIENCE
                 </div>
             </div>
             <div class="row ">
-                <div class="col-xs-1 col-sm-1 "></div>
-                <div class="col-xs-10 col-sm-10 about-section">
-                    <img class="about-picture " src="./assets/img/experience-pic.png " alt="uPack project" onclick="openProject('./work.html')">
+                <div class="col-xs-12 col-sm-1 col-xs-12 col-sm-1 "></div>
+                <div class="col-xs-12 col-sm-10 col-xs-12 col-sm-10 about-section">
+                    <img class="about-picture " src="./assets/img/experience-pic.png " alt="uPack project" onclick="openProject('./about.html')">
                     <div class="about-description">
                         A minha formação começou com o curso de Artes Visuais na Escola José<br> Estêvão, em Aveiro, onde percebi o que queria estudar quando fosse para o<br> ensino superior: Design.
                         <br>
-                        <a href="./work.html">+background</a>
+                        <a href="./about.html">+background</a>
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
     <footer>
         <div class="container-fluid ">
             <div class="row text-center ">
-                <div class="col-sm-4 ">
+                <div class="col-xs-12 col-sm-4 ">
                     <!--Column1-->
                     <h5>navigate</h5>
                     <ul class="list-unstyled ">
@@ -129,10 +129,10 @@
                         </li>
                         <li><a href="./index.html">home</a></li>
                         <li><a href="./about.html">about me</a></li>
-                        <li><a href="./work.html">my experience</a></li>
+                        <li><a href="./about.html">my experience</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 ">
+                <div class="col-xs-12 col-sm-4 ">
                     <!--Column1-->
                     <h5>work</h5>
                     <ul class="list-unstyled ">
@@ -141,12 +141,12 @@
                         <li><a href="./work.html">all</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 ">
+                <div class="col-xs-12 col-sm-4 ">
                     <!--Column1-->
                     <h5>contact me</h5>
                     <ul class="list-unstyled ">
                         <li><a href="mailto:ana@caledesign.pt">my email</a></li>
-                        <li><a href="#">my studio</a></li>
+                        <li><a href="./contact.html">my studio</a></li>
                         <li><a href="https://www.instagram.com/anacalegaspar/">my instagram</a></li>
                     </ul>
                 </div>

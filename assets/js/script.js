@@ -81,6 +81,10 @@ function changeView(view) {
     document.getElementById("center-project").src = currentView[1].src;
     document.getElementById("right-project").src = currentView[2].src;
 
+    document.getElementById("left-link").href = currentView[0].href;
+    document.getElementById("center-link").href = currentView[1].href;
+    document.getElementById("right-link").href = currentView[2].href;
+
     document.getElementById("project-title").innerText = currentView[1].title;
     document.getElementById("project-description").innerText = currentView[1].description;
 }
@@ -96,6 +100,10 @@ function changeRight() {
     document.getElementById("left-project").src = currentView[0].src;
     document.getElementById("center-project").src = currentView[1].src;
     document.getElementById("right-project").src = currentView[2].src;
+
+    document.getElementById("left-link").href = currentView[0].href;
+    document.getElementById("center-link").href = currentView[1].href;
+    document.getElementById("right-link").href = currentView[2].href;
 
     document.getElementById("project-title").innerText = currentView[1].title;
     document.getElementById("project-description").innerText = currentView[1].description;
@@ -115,6 +123,10 @@ function changeLeft() {
     document.getElementById("left-project").src = currentView[0].src;
     document.getElementById("center-project").src = currentView[1].src;
     document.getElementById("right-project").src = currentView[2].src;
+
+    document.getElementById("left-link").href = currentView[0].href;
+    document.getElementById("center-link").href = currentView[1].href;
+    document.getElementById("right-link").href = currentView[2].href;
 
     document.getElementById("project-title").innerText = currentView[1].title;
     document.getElementById("project-description").innerText = currentView[1].description;
